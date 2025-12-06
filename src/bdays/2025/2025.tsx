@@ -3,6 +3,9 @@ import HeroSection from "./HeroSection";
 import CardMessage from "./CardMessage";
 import WordlePuzzle from "./WordlePuzzle";
 import GiftReveal1 from "./RevealOne";
+import ConnectionsPuzzle from "./ConnectionsPuzzle";
+import GiftReveal2 from "./RevealTwo";
+import { Summary } from "./Summary";
 
 export type Steps =
   | "HERO"
@@ -26,5 +29,10 @@ export const TwentyTwentyFive = () => {
     case "PRESENT1":
       return <GiftReveal1 setStep={setStep} />;
     case "PUZZLE2":
+      return <ConnectionsPuzzle setStep={setStep} />;
+    case "PRESENT2":
+      return <GiftReveal2 setStep={setStep} />;
+    case "END":
+      return <Summary />;
   }
 };
