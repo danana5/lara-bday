@@ -40,7 +40,7 @@ export default function WordlePuzzle({ setStep }: WordlePuzzleProps) {
     });
 
     // Check for wrong positions (yellow)
-    result.forEach((item, i) => {
+    result.forEach((item) => {
       if (item.status === "unknown") {
         const idx = answerArray.indexOf(item.letter);
         if (idx !== -1) {
