@@ -256,6 +256,7 @@ export default function ConnectionsPuzzle({ setStep }: ConnectionsPuzzleProps) {
                 >
                   Submit
                 </Button>
+                <Button onClick={() => setStep("PRESENT2")}>here</Button>
               </div>
             </>
           )}

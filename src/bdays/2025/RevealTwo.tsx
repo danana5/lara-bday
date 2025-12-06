@@ -42,7 +42,7 @@ export default function GiftReveal2({ setStep }: GiftReveal2Props) {
         {stage >= 1 && (
           <div className="mb-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-2xl">
-              Your Second Gift
+              Your Second Present
             </h1>
           </div>
         )}
