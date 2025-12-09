@@ -120,7 +120,7 @@ export default function WordlePuzzle({ setStep }: WordlePuzzleProps) {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-blue-100 p-4 relative">
       {/* Back button */}
       <Button
-        onClick={() => setStep("MESSAGE")}
+        onClick={() => setStep("PRESENT2")}
         variant="secondary"
         size="sm"
         className="absolute top-4 left-4 z-20"
@@ -131,7 +131,7 @@ export default function WordlePuzzle({ setStep }: WordlePuzzleProps) {
 
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle className="text-center">🎮 Puzzle #1: Wordle</CardTitle>
+          <CardTitle className="text-center">🎮 Wordle</CardTitle>
           <p className="text-center text-sm text-gray-600">
             Guess the {WORD_LENGTH}-letter word! The word is related to the
             present.

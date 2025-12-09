@@ -23,7 +23,7 @@ export default function GiftReveal1({ setStep }: GiftReveal1Props) {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-orange-400 via-pink-500 to-purple-600 p-4 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-[url('assets//IMG-20240224-WA0009.jpg')] bg-center bg-cover p-4 relative overflow-hidden">
       {/* Subtle gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-yellow-300 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -38,7 +38,7 @@ export default function GiftReveal1({ setStep }: GiftReveal1Props) {
         {stage >= 1 && (
           <div className="mb-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-2xl">
-              Your First Present
+              Your Second Present
             </h1>
           </div>
         )}
@@ -86,11 +86,11 @@ export default function GiftReveal1({ setStep }: GiftReveal1Props) {
         {stage >= 3 && (
           <div className="mt-8 animate-fade-in-up">
             <Button
-              onClick={() => setStep("PUZZLE2")}
+              onClick={() => setStep("END")}
               size="lg"
               className="text-xl px-12 py-6 bg-white text-purple-600 hover:bg-purple-50 shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300"
             >
-              Continue to Puzzle #2 🎁
+              See All Your Presents! 🎁
             </Button>
           </div>
         )}

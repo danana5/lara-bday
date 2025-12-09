@@ -8,7 +8,7 @@ type HeroSectionProps = {
 
 export default function HeroSection({ setStep }: HeroSectionProps) {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-400 via-purple-500 to-indigo-600 text-white p-4 relative">
+    <div className="min-h-screen flex flex-col items-center justify-center text-white p-4 relative bg-[url('assets//IMG-20250418-WA0060.jpg')] bg-center bg-cover">
       {/* Floating hearts animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {[...Array(20)].map((_, i) => (
@@ -28,13 +28,10 @@ export default function HeroSection({ setStep }: HeroSectionProps) {
 
       <div className="z-10 text-center space-y-8">
         <h1 className="text-6xl md:text-8xl font-bold animate-fade-in">
-          Happy Birthday!
+          Happy 25th Birthday!
         </h1>
         <p className="text-3xl md:text-5xl font-light animate-fade-in-delay">
           Lara
-        </p>
-        <p className="text-2xl md:text-3xl opacity-90 animate-fade-in-delay-2">
-          2025
         </p>
 
         <Button

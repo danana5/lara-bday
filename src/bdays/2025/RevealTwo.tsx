@@ -23,7 +23,7 @@ export default function GiftReveal2({ setStep }: GiftReveal2Props) {
   }, []);
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 p-4 relative overflow-hidden">
+    <div className="min-h-screen flex items-center justify-center bg-[url('assets//IMG-20250410-WA0015.jpg')] bg-center bg-cover p-4 relative overflow-hidden">
       {/* Subtle gradient orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-20">
         <div className="absolute top-1/3 right-1/4 w-96 h-96 bg-purple-400 rounded-full blur-3xl animate-pulse-slow"></div>
@@ -42,7 +42,7 @@ export default function GiftReveal2({ setStep }: GiftReveal2Props) {
         {stage >= 1 && (
           <div className="mb-8 animate-fade-in">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-4 drop-shadow-2xl">
-              Your Second Present
+              Your First Present
             </h1>
           </div>
         )}
@@ -68,17 +68,17 @@ export default function GiftReveal2({ setStep }: GiftReveal2Props) {
                 <div className="flex items-center justify-center gap-3 text-xl md:text-2xl">
                   <Zap className="w-7 h-7 text-yellow-500" />
                   <span className="font-semibold">
-                    Create anything you can imagine!
+                    A Bambu Lab A1 mini 3D Printer!
                   </span>
                 </div>
                 <div className="flex items-center justify-center gap-3 text-xl md:text-2xl">
                   <Sparkles className="w-7 h-7 text-purple-500" />
-                  <span>Turn your ideas into reality</span>
+                  <span>Time Turn your ideas into reality</span>
                 </div>
               </div>
 
               <div className="text-2xl md:text-3xl text-gray-600 font-light">
-                Time to bring your creativity to life! 🚀
+                Start thinking about what we could do with for our house! 🚀
               </div>
             </div>
           </div>
@@ -88,11 +88,11 @@ export default function GiftReveal2({ setStep }: GiftReveal2Props) {
         {stage >= 3 && (
           <div className="mt-8 animate-fade-in-up">
             <Button
-              onClick={() => setStep("END")}
+              onClick={() => setStep("PUZZLE1")}
               size="lg"
               className="text-xl px-12 py-6 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white shadow-xl hover:shadow-2xl transform hover:scale-110 transition-all duration-300"
             >
-              See All Your Presents! 🎊
+              Go To Puzzle #2! 🎊
             </Button>
           </div>
         )}

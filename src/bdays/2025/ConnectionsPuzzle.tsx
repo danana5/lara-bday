@@ -17,7 +17,7 @@ interface FoundCategory {
 
 const categories = [
   {
-    name: "3D Printing Materials",
+    name: "Printing Materials",
     words: ["PLA", "RESIN", "ABS", "NYLON"],
     color: "yellow",
     difficulty: 1,
@@ -35,7 +35,7 @@ const categories = [
     difficulty: 3,
   },
   {
-    name: "Things You Can 3D Print",
+    name: "Things You Can Print",
     words: ["VASE", "HOLDER", "STAND", "TOOL"],
     color: "purple",
     difficulty: 4,
@@ -155,7 +155,7 @@ export default function ConnectionsPuzzle({ setStep }: ConnectionsPuzzleProps) {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 to-purple-100 p-4 relative">
       {/* Back button */}
       <Button
-        onClick={() => setStep("PRESENT1")}
+        onClick={() => setStep("MESSAGE")}
         variant="secondary"
         size="sm"
         className="absolute top-4 left-4 z-20"
@@ -166,9 +166,7 @@ export default function ConnectionsPuzzle({ setStep }: ConnectionsPuzzleProps) {
 
       <Card className="w-full max-w-2xl">
         <CardHeader>
-          <CardTitle className="text-center">
-            🧩 Puzzle #2: Connections
-          </CardTitle>
+          <CardTitle className="text-center">🧩 Connections</CardTitle>
           <p className="text-center text-sm text-gray-600">
             Find groups of four related words
           </p>
@@ -256,7 +254,6 @@ export default function ConnectionsPuzzle({ setStep }: ConnectionsPuzzleProps) {
                 >
                   Submit
                 </Button>
-                <Button onClick={() => setStep("PRESENT2")}>here</Button>
               </div>
             </>
           )}

@@ -50,17 +50,7 @@ export const Summary = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-4">
-      {/* --- Main Heading --- */}
-      <h1 className="text-5xl md:text-7xl font-extrabold text-blue-800 tracking-tight mb-4 text-center">
-        🎉 Grand Finale! 🎉
-      </h1>
-
-      <p className="text-xl text-gray-600 mb-12 text-center max-w-2xl">
-        Here are the two amazing presents you unlocked! Prepare for fun, sun,
-        and 3D creation!
-      </p>
-
+    <div className="min-h-screen bg-[url('assets//IMG-20240224-WA0005.jpg')] bg-center bg-cover flex flex-col items-center justify-center p-4">
       {/* --- Section 1: Major Presents (Grid) --- */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl w-full mb-16">
         {/* --- Present 1: Holiday to Gran Canaria --- */}
@@ -70,7 +60,7 @@ export const Summary = () => {
               ✈️ Holiday to Gran Canaria
             </CardTitle>
             <CardDescription className="text-lg text-yellow-600">
-              Sun, sand, and great company!
+              Staying in a newly renovated hotel!
             </CardDescription>
           </CardHeader>
           <CardContent className="p-6">
@@ -78,12 +68,13 @@ export const Summary = () => {
               The Crew:
             </h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-              <li>**Amie**</li>
-              <li>**Adam**</li>
-              <li>**Eli**</li>
+              <li>Amie</li>
+              <li>Adam</li>
+              <li>Eli</li>
             </ul>
             <p className="mt-4 text-gray-600 italic">
-              Get ready for some much-needed relaxation and adventure!
+              We're going in March so probably best to start booking it off
+              work!
             </p>
           </CardContent>
         </Card>
@@ -92,10 +83,10 @@ export const Summary = () => {
         <Card className="shadow-2xl border-4 border-teal-400 transform hover:scale-[1.02] transition duration-300">
           <CardHeader className="bg-teal-50 p-6 rounded-t-lg">
             <CardTitle className="text-3xl font-bold text-teal-700">
-              🖨️ Cutting-Edge 3D Printer
+              🖨️ 3D Printer
             </CardTitle>
             <CardDescription className="text-lg text-teal-600">
-              Unleash your creative engineering side.
+              Unleash your creative ideas for home hacks and shit
             </CardDescription>
           </CardHeader>
           <CardContent className="p-6">
@@ -103,19 +94,19 @@ export const Summary = () => {
               What's Next:
             </h3>
             <ul className="list-disc list-inside space-y-1 text-gray-700 ml-4">
-              <li>Modeling your first creation.</li>
-              <li>Learning new slicing software.</li>
-              <li>Printing customized gifts!</li>
+              <li>Modeling your first creation</li>
+              <li>Learning the software</li>
+              <li>Printing customized items</li>
             </ul>
             <p className="mt-4 text-gray-600 italic">
-              From design to reality, the possibilities are endless!
+              From idea to reality i actually can't wait to see what you create!
             </p>
           </CardContent>
         </Card>
       </div>
 
       {/* --- Section 2: Minor Presents --- */}
-      <h2 className="text-4xl font-bold text-purple-700 mb-8 text-center border-b-2 border-purple-300 pb-2">
+      <h2 className="text-4xl font-bold text-white mb-8 text-center border-b-2 border-purple-300 pb-2">
         ✨ A Few More Treats! ✨
       </h2>
 
@@ -127,7 +118,7 @@ export const Summary = () => {
               🍽️ San Sab Dinner Date
             </CardTitle>
             <CardDescription className="text-sm text-red-500">
-              Your Christmas night feast is sorted!
+              On the Tab of Dan OFC
             </CardDescription>
           </CardHeader>
         </Card>
@@ -136,10 +127,11 @@ export const Summary = () => {
         <Card className="shadow-md border border-pink-300 hover:shadow-lg transition duration-200">
           <CardHeader className="p-4">
             <CardTitle className="text-xl font-semibold text-pink-600">
-              🎤 Surprise Concert Tickets
+              🍽️ One Home Cooked 3-Course Meal with Wine
             </CardTitle>
             <CardDescription className="text-sm text-pink-500">
-              Let's find a show and rock out!
+              Let's have a romantic night in one day where i make you starter
+              main and dessert!
             </CardDescription>
           </CardHeader>
         </Card>
@@ -148,10 +140,10 @@ export const Summary = () => {
         <Card className="shadow-md border border-blue-300 hover:shadow-lg transition duration-200">
           <CardHeader className="p-4">
             <CardTitle className="text-xl font-semibold text-blue-600">
-              🎁 Personalised Gift
+              🎁 A day out shopping for xmas gifts
             </CardTitle>
             <CardDescription className="text-sm text-blue-500">
-              Something unique, just for you.
+              Yeah this is an absolute rebound present hahaha
             </CardDescription>
           </CardHeader>
         </Card>
